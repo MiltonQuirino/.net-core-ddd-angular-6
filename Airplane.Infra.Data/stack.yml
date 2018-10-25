@@ -1,0 +1,14 @@
+﻿version: '3.3'
+volumes:
+  data:
+services:
+  db:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    volumes:
+      - data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=qwerty
+      - MYSQL_DATABASE=gol
+      - MYSQL_ROOT_HOST=%
