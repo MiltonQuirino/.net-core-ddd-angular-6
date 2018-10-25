@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Airplane.Domain.Entities
 {
-    public class Airplane: BaseEntity
+    public class Plane: BaseEntity
     {
         public string Model { get; set; }
 

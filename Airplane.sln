@@ -13,17 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{293E04DB-3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{1D2036E6-7989-477A-B10F-F89B66F344A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardControl.Application", "Airplaine.Application\BoardControl.Application.csproj", "{C7908C49-D35C-4D9E-8481-E34B897E927D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airplane.Application", "Airplaine.Application\Airplane.Application.csproj", "{C7908C49-D35C-4D9E-8481-E34B897E927D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airplane.Domain", "Airplane.Domain\Airplane.Domain.csproj", "{D45EBFB3-455D-4D42-8016-B2537779525A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airplane.Service", "Airplane.Service\Airplane.Service.csproj", "{D30FB850-6DD6-4440-9889-DAE9BB6D159A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aiplane.Service", "Airplane.Service\Aiplane.Service.csproj", "{D30FB850-6DD6-4440-9889-DAE9BB6D159A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airplane.Infra.CrossCutting", "Airplane.Infra.CrossCutting\Airplane.Infra.CrossCutting.csproj", "{467E6D1A-7EE1-4755-8377-077CCAE41D2C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airplane.Infra.Data", "Airplane.Infra.Data\Airplane.Infra.Data.csproj", "{1DA49BC3-0657-422D-9452-16400A3F6311}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BoardControl.Service", "BoardControl.Service", "{77BFA916-7989-4802-BE84-AF52FA03DE5A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{969F3126-9CB2-4943-9B79-4E7587678EB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +60,5 @@ Global
 		{D30FB850-6DD6-4440-9889-DAE9BB6D159A} = {A2111110-E0BC-49BF-934F-EF592D7D1640}
 		{467E6D1A-7EE1-4755-8377-077CCAE41D2C} = {1D2036E6-7989-477A-B10F-F89B66F344A2}
 		{1DA49BC3-0657-422D-9452-16400A3F6311} = {293E04DB-3F00-4601-9C3D-BC458A57DEAE}
-		{77BFA916-7989-4802-BE84-AF52FA03DE5A} = {A2111110-E0BC-49BF-934F-EF592D7D1640}
 	EndGlobalSection
 EndGlobal

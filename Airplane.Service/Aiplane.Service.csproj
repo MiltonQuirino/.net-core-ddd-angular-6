@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Validators\" />
     <Folder Include="Services\" />
+    <Folder Include="Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.0.100" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Airplane.Domain\Airplane.Domain.csproj" />
+    <ProjectReference Include="..\Airplane.Infra.Data\Airplane.Infra.Data.csproj" />
   </ItemGroup>
 </Project>

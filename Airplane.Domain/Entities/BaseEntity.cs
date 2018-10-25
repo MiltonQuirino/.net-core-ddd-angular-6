@@ -1,10 +1,8 @@
 ﻿using System;
 namespace Airplane.Domain.Entities
 {
-    public class BaseEntity
+    public abstract class BaseEntity
     {
-        public BaseEntity()
-        {
-        }
+        public virtual int Id { get; set; }
     }
 }
