@@ -12,7 +12,7 @@ namespace Airplane.Application.Controllers
     {
         private BaseService<Plane> service = new BaseService<Plane>();
 
-        [HttpPost("Create")]
+        [HttpPost("create")]
         public IActionResult Post([FromBody] Plane plane)
         {
             try
@@ -32,7 +32,27 @@ namespace Airplane.Application.Controllers
 
         }
 
-        [HttpGet("Get")]
+        [HttpPut("update")]
+        public IActionResult update([FromBody] Plane plane)
+        {
+            try
+            {
+                service.Put<PlaneValidators>(plane);
+
+                return new ObjectResult(plane);
+            }
+            catch (ArgumentNullException ex)
+            {
+                return NotFound(ex);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+
+        }
+
+        [HttpGet("get")]
         public IActionResult GetAll()
         {
 
@@ -62,5 +82,16 @@ namespace Airplane.Application.Controllers
                 return BadRequest(ex);
             }
         }
+
+        [HttpDelete("delete/{id}")]
+        public IActionResult Delete(int id){
+            try{
+                service.Delete(id);
+                return NoContent();
+            }catch(Exception ex){
+                return BadRequest(ex);
+            }
+        }
+
     }
 }

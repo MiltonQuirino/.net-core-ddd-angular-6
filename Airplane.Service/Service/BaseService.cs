@@ -35,6 +35,7 @@ namespace Aiplane.Service.Service
             var plane = repository.Select(id);   
 
             repository.Delete(plane);
+
         }
 
         public IList<T> Get() => repository.SelectAll();
